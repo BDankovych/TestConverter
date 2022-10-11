@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WalletViewCell" id="QAl-Tb-Lp1" customClass="WalletViewCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kmc-P0-GXF">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJF-kG-RHL">
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="50"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZJF-kG-RHL" firstAttribute="leading" secondItem="Kmc-P0-GXF" secondAttribute="leading" id="CZK-4A-hiW"/>
+                    <constraint firstAttribute="bottom" secondItem="ZJF-kG-RHL" secondAttribute="bottom" id="ho1-3X-u6N"/>
+                    <constraint firstAttribute="trailing" secondItem="ZJF-kG-RHL" secondAttribute="trailing" id="knw-6O-51Q"/>
+                    <constraint firstItem="ZJF-kG-RHL" firstAttribute="top" secondItem="Kmc-P0-GXF" secondAttribute="top" id="thz-2q-okS"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="498" height="50"/>
+            <connections>
+                <outlet property="currencyLabel" destination="ZJF-kG-RHL" id="2mU-RV-JWV"/>
+            </connections>
+            <point key="canvasLocation" x="481.53846153846155" y="20.616113744075829"/>
+        </collectionViewCell>
+    </objects>
+</document>
